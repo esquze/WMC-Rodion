@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=name
+comment1.target=void\ setName(java.lang.String)
+comment2.params=date
+comment2.target=void\ setDate(int)
+comment3.params=
+comment3.target=Student()
+numComments=4
