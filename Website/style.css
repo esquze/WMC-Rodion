@@ -9,11 +9,36 @@ header {
     margin-bottom: 2em;
 }
 
-.top {
-    margin: 10px 0 40px;
+.links {
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    padding: 16px 24px;
+    background: #1E1E1E;
+    border-radius: 16px;
+    border: 1px solid #9B59FF;
+    width: fit-content;
 }
 
-div {
+.links a {
+    color: #C0C0C0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.links a:hover {
+    color: #FFFFFF;
+    background: rgba(155, 89, 255, 0.2);
+}
+
+.top {
+    margin: 40px 0 40px;
+}
+
+.text-block {
     background: #2A2A33;
     border-radius: 16px;
     padding: 24px;
@@ -52,6 +77,10 @@ hr {
     margin-left: auto;
 }
 
+.jesse {
+    width: 100px;
+}
+
 footer {
     text-align: center;
     color: #B0B0B0;
@@ -66,4 +95,36 @@ a {
 
 a:hover {
   color: #B39DFF;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.photo-item h2 {
+    margin-bottom: 12px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.img-odessa {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #9B59FF;
+    box-shadow: 0 0 12px rgba(155, 89, 255, 0.3);
+}
+
+.map-center {
+    display: flex;
+    justify-content: center;
+}
+
+.map h2 {
+    margin-bottom: 12px;
+    color: #F5F5F5;
+    text-align: center;
 }
