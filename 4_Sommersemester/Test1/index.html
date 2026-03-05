@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="place-items: center;">
-    <h1>onClick</h1>
-    <form action="#">
-        <input type="number" name="zahl1" id="zahl1" placeholder="Zahl 1">
-        <input type="number" name="zahl2" id="zahl2" placeholder="Zahl 2">
-        <button type="button" onclick="addieren()">Addieren</button>
-        <p id="ergebnis"></p>
-    </form>
+    <h1>Taschenrechner</h1>
+    <div class="calculator">
+        <div id="display" class="display-window">0</div>
+    
+        <div class="keypad">
+            <button onclick="clearDisplay()">C</button>
+        </div>
+    </div>
 </body>
 </html>
