@@ -9,7 +9,32 @@ const students = [
   { name: "Hugo", age: 18, grade: 4 },
 ];
 
-// Task 1 – filter:
+// Task 1 – filter: Find all students who passed (grade ≤ 4). Store the result in `passed`.
 
-const result = students.filter(grade);
+const passed = students.filter(s => s.grade <= 4);
 console.log(passed);
+
+// Task 2 – map: Create an array of strings in the format `"Anna (17)"` from the original array. Store it in `labels`.
+
+const labels = students.map(s => `${s.name} (${s.age})`);
+console.log(labels);
+
+// Task 3 – filter + map: From only the passed students, extract just their names into an array `passedNames`.
+
+const passedNames = students
+    .filter(s => s.grade <= 4)
+    .map(s => s.name);
+console.log(passedNames);
+
+// Task 4 – reduce: Calculate the average grade of all students. Store it in `averageGrade`.
+
+const averageGrade = students.reduce((sum, s) => sum + s.grade, 0) / students.length;
+console.log(averageGrade);
+
+// Task 5 – chaining (bonus): In a single chain, find the names of all students aged 17 or older who passed, joined into one comma-separated string.
+
+const chain = passed 
+    .filter(s => s.age >= 17 && s.grade <= 4)
+    .map(s => s.name)
+    .join(', ');
+console.log(chain);
