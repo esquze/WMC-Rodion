@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM-Manipulation mit Event-Handlern</title>
+</head>
+<body>
+
+    <h1>DOM-Manipulation mit Event-Handlern</h1>
+
+    <!-- Aufgabe 1 -->
+
+    <section>
+        <h2>Aufgabe 1: Zähler mit Anzeige</h2>
+
+        <div class="display">
+            <span id="counter1">0</span>
+        </div>
+
+        <div class="btn-row">
+            <button onclick="plus()">+</button>
+            <button onclick="minus()">-</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </section>
+
+    <!-- Aufgabe 2 -->
+
+    <section>
+        <h2>Aufgabe 2: Zufallsfarbe</h2>
+
+        <div class="random-color" id="rainbow">Hallo</div>
+
+        <div class="btn-row">
+            <button onclick="randomColor()">ZUFALL</button>
+        </div>
+
+        <p class="rgb" id="rgb-info"></p>
+    </section>
+
+    <!-- Aufgabe 3 -->
+
+    <section>
+        <h2>Aufgabe 3: Event-Listener statt onclick</h2>
+
+        <div class="display">
+            <span id="counter2">0</span>
+        </div>
+
+        <div class="btn-row">
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <button id="reset">RESET</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
