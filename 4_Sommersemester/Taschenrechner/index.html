@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Taschenrechner</h1>
+
+    <div class="calculator">
+
+        <div id="display" class="display-window">0</div>
+    
+        <div class="keypad">
+            <button class="btn-clear" onclick="resetButton()">AC</button>
+            <button class="btn-delete" onclick="deleteButton()">DEL</button>
+            <button class="btn-polarity" onclick="setPolarity()">+/−</button>
+            <button class="btn-sign" onclick="setOperator('÷')">÷</button>
+
+            <button onclick="numButton('7')">7</button>
+            <button onclick="numButton('8')">8</button>
+            <button onclick="numButton('9')">9</button>
+            <button class="btn-sign" onclick="setOperator('×')">×</button>
+
+            <button onclick="numButton('4')">4</button>
+            <button onclick="numButton('5')">5</button>
+            <button onclick="numButton('6')">6</button>
+            <button class="btn-sign" onclick="setOperator('−')">−</button>
+            
+            <button onclick="numButton('1')">1</button>
+            <button onclick="numButton('2')">2</button>
+            <button onclick="numButton('3')">3</button>
+            <button class="btn-sign" onclick="setOperator('+')">+</button>
+
+            <button onclick="numButton('0')">0</button>
+            <button onclick="numButton('00')">00</button>
+            <button onclick="numButton('.')">.</button>
+            <button class="btn-sign" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
