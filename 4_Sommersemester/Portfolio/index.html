@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <button id="themeBtn" onclick="changeTheme()">☀️</button>
+
+    <section class="person">
+        <p class="person-tag">Portfolio</p>
+        <h1 class="person-name">Rodion<br><span>Bal</span></h1>
+        <p class="person-sub">18 · Vienna, Austria · Born in Odessa, Ukraine</p>
+        <div class="chips">
+            <span>Math</span>
+            <span>Coding</span>
+            <span>Problem Solving</span>
+            <span>Multitasking</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="tabel-grid">
+            <div class="tabel">
+                <p class="tabel-label">Info</p>
+                <ul>
+                    <li><span>Name</span> Rodion Bal</li>
+                    <li><span>Born</span> 05.09.2007</li>
+                    <li><span>From</span> Odessa, Ukraine</li>
+                    <li><span>Lives</span> Vienna, Austria</li>
+                    <li><span>Age</span> 18</li>
+                </ul>
+            </div>
+
+            <div class="tabel">
+                <p class="tabel-label">Skills</p>
+                <ul>
+                    <li><span>Hard</span> Math, Coding</li>
+                    <li><span>Soft</span> Problem Solving</li>
+                    <li><span>Vibe</span> Learning, Talkative</li>
+                    <li><span>Goal</span> Working in IT-Industry </li>
+                </ul>
+            </div>
+            <div class="tabel tabel-wide">
+                <p class="tabel-label">Blog</p>
+                <p class="tabel-text">
+                    Hi! My name is <strong>Rodion</strong>. I've been living in Austria for 4 years
+                    and I love math, coding, and learning new things every day.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">GitHub</h2>
+        <div id="github-section" class="github-section">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Odessa</h2>
+        <p class="section-sub">My place of birth</p>
+        <div class="map-wrap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.5783834159!2d30.711787500000003!3d46.459972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjUwMDA!5e0!3m2!1sru!2sat!4v1758812649594!5m2!1sru!2sat"
+                width="100%" height="340" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">My school projects — click to open.</p>
+
+        <div class="project-list">
+            <div class="project-tabel">
+                <div class="project-info">
+                    <h3>Taschenrechner</h3>
+                    <p>A calculator with buttons 0–9, operators, backspace and reset.</p>
+                </div>
+                <a href="../Taschenrechner/index.html" target="_blank" class="project-btn">Open ↗</a>
+            </div>
+
+            <div class="project-tabel">
+                <div class="project-info">
+                    <h3>DOM-Manipulation</h3>
+                    <p>Counter with +/−/reset, random color button and event listeners.</p>
+                </div>
+                <a href="../DOM-Manipulation_mit_Event-Handlern/index.html" target="_blank" class="project-btn">Open ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-row">
+            <a href="callto:+4369010299354" class="contact-tabel">
+                +43 690 102 99 354
+            </a>
+            <a href="mailto:rodbal@gmail.com" class="contact-tabel">
+                rodbal@gmail.com
+            </a>
+            <a href="https://github.com/esquze" target="_blank" class="contact-tabel">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 Rodion Bal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
