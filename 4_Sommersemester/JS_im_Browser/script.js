@@ -1,2 +1,3 @@
-console.log("script.js geladen");
-
+function hin() {
+    const heading = document.querySelector("mainheading");
+}
